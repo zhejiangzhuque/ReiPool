@@ -1,4 +1,10 @@
-# ReiPool
+<h1 align="center">ReiPool</h1>
+<p align="center">
+    <a href="https://github.com/zhejiangzhuque/ReiPool"><img src="https://img.shields.io/badge/-Github-grey?logo=github" alt="Github"></a>  <!--  修改githubURL -->
+    <a href="https://ieeexplore.ieee.org/document/10689369"><img src="https://img.shields.io/static/v1?label=Pub&message=TKDE'24&color=orange" alt="Pub"></a>  <!--  修改arxiv URL, 发布信息-->
+    <a href="https://github.com/zhejiangzhuque/ReiPool/blob/main/LICENSE"><img src="https://img.shields.io/github/license/zhejiangzhuque/ReiPool?color=blue" alt="License">
+</a>
+
 
 The code of this paper "ReiPool: Reinforced Pooling Graph Neural Networks for Graph-level Representation Learning", accepted by IEEE TKDE 2024.
 
@@ -6,7 +12,7 @@ The code of this paper "ReiPool: Reinforced Pooling Graph Neural Networks for Gr
 Current graph pooling methods easily destroy the global structure of the input graph during the graph pooling process and mechanically control the number of graph pooling layers for different datasets. We analyze that each graph in the graph dataset has different structures and sizes, so a specfic graph pooling strategy needs to be developed. Thus, this work aims to introduce multi-agent reinforcement learning to guide the graph pooling process to generate the most representative coarsened graph for each graph. Specifically, we design a hybrid graph coarsening module to coarsen first-order and star structures of nodes, enabling to preserve the global structure of the graph. Then, an adaptive graph pooling module with multi-agent RL is proposed to generate the most representative coarsened graph for each graph, where the feature-agent controls the fusion of coarsened node features and the depth-agent controls the number of graph coarsening layers. Finally, we design a graph-level contrast between the coarsened graph and the input graph to enhance global information preservation for graph-level representations.
 
 ### The framework of ReiPool
-![](https://github.com/XuexiongLuoMQ/paper-figure/blob/master/reipool-framew.png)
+![](images/framework.png)
 
 ## Data preparation
 
